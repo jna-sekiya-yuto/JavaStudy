@@ -1,0 +1,62 @@
+int[] ary = {
+    {1, 2, 3, 4},
+    {5, 6, 7, 8},
+    {9, 10, 11, 12}
+} ;
+
+System.out.println(ary.length);
+
+
+int year = 2000; // 任意の値を設定
+
+if (year % 100 == 0) {
+    if (year % 400 ==0) {
+        System.out.println(year+ "年は閏年です。")
+    } else {
+        System.out.println(year+ "年は閏年ではないです。")
+    }
+} else {
+        if (year % 4 ==0) {
+        System.out.println(year+ "年は閏年です。")
+    } else {
+        System.out.println(year+ "年は閏年ではないです。")
+    }
+}
+
+if (year % 4 != 0){
+    System.out.println(year+ "年は閏年ではないです。");
+} else {
+    if (year % 100 == 0 || year % 400 != 0) {
+        System.out.println(year+ "年は閏年ではないです。");
+    } else {
+        System.out.println(year+ "年は閏年です。");
+    }
+}
+
+for (int i =0, i < 10,  i++) {
+    System.out.println(i);
+}
+
+int i = 0;
+while (i < 10) {
+    if (i == 5) {
+        break;
+    }
+    i++;
+}
+System.out.println(i); 
+
+String str = "みかん";
+switch(str) {
+    case "みかん":
+    System.out.println(1);
+    berak;
+
+    case "りんご":
+    System.out.println(2);
+    berak;
+
+    default:
+    System.out.println(3);
+    berak;
+}
